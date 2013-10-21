@@ -17,7 +17,6 @@ describe "UserPages" do
   	it { should have_content(user.name) }
   	it { should have_title(user.name) }
   end
-end
 
 describe "signup" do
 
@@ -44,5 +43,5 @@ describe "signup" do
     end
   end
 end
-
+end
 
