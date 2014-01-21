@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+	has_many :microposts
 	before_save { self.email = email.downcase }
 	before_create :create_remeber_token
 	validates :name, presence: true, length: { maximum: 50 }
